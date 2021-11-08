@@ -5,3 +5,4 @@ Module 2: Basic CSS.
 Module 3: Applied Visual Design.
 Module 4: Applied Accessibility.
 Module 5: Responsive Web Design Principles.
+Module 6: CSS Flexbox.
