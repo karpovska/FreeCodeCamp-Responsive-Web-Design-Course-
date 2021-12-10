@@ -67,12 +67,23 @@
                 width: 100%;
                 padding: 5px;
             }
+            #features{
+                margin-top: 30px;
+            }
+            .container{
+                max-width: 1000px;
+                width: 100%;
+                margin: 0 auto;
+            }
             a {
                 text-decoration: none;
             }            
             body {
                 background-color: #eee;
                 font-family: 'Lato', sans-serif;
+            }
+            div {
+                display: block;
             }
             nav {
                 display: block;
@@ -138,11 +149,12 @@
                     <input id="submit" type="submit" value="Submit" class="btn"></input>
                 </form>
             </section>
-            <iframe width="450" height="253" src="https://www.youtube.com/embed/JTvsOkMphy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-            <div id="features"></div>
-            <div id="how-it-works"></div>
-            <div id="pricing"></div>
+            <div class="container">                
+                <div id="features"></div>
+                <div id="how-it-works"></div>
+                <div id="pricing"></div>
+                <iframe width="450" height="253" src="https://www.youtube.com/embed/JTvsOkMphy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+            </div>
         </div>
     </body>
 </html>
