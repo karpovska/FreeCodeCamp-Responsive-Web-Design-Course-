@@ -11,11 +11,18 @@
             #header {
                 display: flex;
                 flex-direction: row;
+                position: fixed;
+                top: 0;
+                min-height: 100px;
+                padding: 0px 20px;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #eee;
             }
             #nav-bar {
                 display: flex;
                 align-items: stretch;  
-                position: fixed;
+                
                 width: 100%;              
             }
             #email {
@@ -27,6 +34,12 @@
             ul {
                 list-style: none;
                 font-size: 20px;
+            }
+            @media(max-width: 300px) {
+                #header-img {
+                    width: 50px;
+                    height: auto;
+                }
             }
 
         </style>
