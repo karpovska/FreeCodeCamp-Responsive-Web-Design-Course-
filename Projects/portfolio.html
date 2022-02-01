@@ -16,7 +16,7 @@
         }
         :root {
             --main-white: #f0f0f0;
-            --main-orange: #ff8c00;
+            --main-orange: #c27e00;
             --main-blue: #45567d;
             --main-gray: #303841;
             --main-brown: #3d0c02;
@@ -54,6 +54,37 @@
             font-style: italic;
             color: var(--main-orange);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--main-orange);
+            box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+            z-index: 10;
+        }
+        .nav-list {
+            display: flex;
+            margin-right: 2rem;
+        }
+        ul {
+            list-style: none;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }        
+        .nav-list a {
+            display: block;
+            font-size: 2.5rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            text-decoration: none;
+            color: var(--main-white);
         }
     </style>
 </head>
