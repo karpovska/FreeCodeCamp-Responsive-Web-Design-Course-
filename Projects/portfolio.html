@@ -8,6 +8,7 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: inherit;
         }
         html {
             box-sizing: border-box;
@@ -104,9 +105,9 @@
             grid-gap: 4rem;
             width: 100%;
             max-width: 1280px;
-            max-width: 0 auto;
+            margin: 0 auto;
             margin-bottom: 6rem;
-            text-align: center;            
+                    
         }
         .project-tile {
             background: var(--main-gray);
@@ -121,6 +122,21 @@
             font-size: 2rem;
             padding: 2rem 0.5 rem;
             font-family: "Raleway", Arial, Helvetica, sans-serif;
+        }
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        img {
+            display: block;
+        }
+        .project-image {
+            height: calc(100% - 6.8rem);
+            width: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -144,22 +160,22 @@
     <section id="projects" class="projects-section">
         <h2 class="projects-section-header">These are some of my projects</h2>
         <div class="projects-grid">
-            <a href="" target="blank" class="project-tile">
-                <img class="" src="" alt="project">
+            <a href="https://codepen.io/karpovska/full/bGrPBXb" target="blank" class="project-tile">
+                <img class="project-image" src="Survey_form.jpg" alt="project">
                 <p class="project-title">
-                    Project one
+                    Survey Form
                 </p>
             </a>
-            <a href="" target="blank" class="project-tile">
-                <img class="" src="" alt="project">
+            <a href="https://codepen.io/karpovska/full/WNZogwx" target="blank" class="project-tile">
+                <img class="project-image" src="technical_documentation.jpg" alt="project">
                 <p class="project-title">
-                    Project two
+                    Technical Documentation Page
                 </p>
             </a>
-            <a href="" target="blank" class="project-tile">
-                <img class="" src="" alt="project">
+            <a href="https://karpovska.github.io/Dino_project/" target="blank" class="project-tile">
+                <img class="project-image" src="dino_project.jpg" alt="project">
                 <p class="project-title">
-                    Project three
+                    Dino Project
                 </p>
             </a>
             <a href="" target="blank" class="project-tile">
@@ -194,7 +210,16 @@
             </a>
         </div>
     </section>
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section">        
+        <div class="contact-links">
+            <a id="profile-link" href="https://github.com/karpovska" target="_blank" class="btn contact-details">
+            <i class="fab fa-github">
+                ::before 
+            </i>
+            " Github"
+            </a>
+        </div>
+    </section>
 
     </section>
 
